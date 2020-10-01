@@ -1,0 +1,106 @@
+@media screen and (max-width: 980px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        position: fixed;
+        right: 0;
+        background-color: #111;
+        z-index: 1;
+        transition: transform 1s;
+    }
+
+    nav.active {
+        transform: translateX(0);
+    }
+
+    ul#nav li {
+        display: list-item;
+        font-weight: bold;
+    }
+
+    #menu {
+        display: inline;
+        position: absolute;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 980px) and (min-height: 900px) {
+
+    header {
+        height: 20vw;
+    }
+
+    #title {
+        font-size: 8vw;
+        margin-top: 4vw;
+        margin-left: 7vw;
+    }
+
+    nav {
+        top: 20vw;
+        min-height: calc(100% - 20vw);
+        padding-top: 7vw;
+        transform: translateX(100vw);
+    }
+
+    ul#nav li {
+        margin: 10px 0;
+        padding: 4vw 20vw;
+        font-size: 7vw;
+    }
+
+    ul#nav li:hover {
+        padding-left: 12vw;
+        padding-right: 28vw;
+        background-color: #0090ff;
+    }
+
+    #menu {
+        top: 6vw;
+        right: 8vw;
+        font-size: 8vw;
+    }
+
+}
+
+@media screen and (max-width: 980px) and (max-height: 899px) {
+
+    header {
+        height: 82px;
+    }
+    
+    #title {
+        font-size: 40px;
+    }
+
+    nav {
+        top: 82px;
+        min-height: calc(100% - 82px);
+        padding-top: 50px;
+        transform: translateX(400px);
+    }
+
+    ul#nav li {
+        margin: 10px 0;
+        padding: 10px 62px;
+        font-size: 30px;
+    }
+
+    ul#nav li:hover {
+        padding-left: 40px;
+        padding-right: 84px;
+        background-color: #0090ff;
+    }
+
+    #menu {
+        top: 25px;
+        right: 50px;
+        font-size: 35px;
+    }
+
+}
